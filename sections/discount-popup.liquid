@@ -1,419 +1,536 @@
-{% if section.settings.show_section %}
-
 {%- style -%}
   .discount-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s;
-    backdrop-filter: blur(5px);
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.65) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 2147483647 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.35s ease, visibility 0.35s ease !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
   }
 
   .discount-popup-overlay.is-active {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
   }
 
   .discount-popup-container {
-    position: relative;
-    width: 95%;
-    max-width: 850px;
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px;
-    color: #fff;
-    font-family: var(--font-body-family), sans-serif;
+    position: relative !important;
+    width: 90% !important;
+    max-width: 750px !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    border: 2px solid #ffffff !important;
+    box-shadow:
+      0 25px 70px -10px rgba(0, 0, 0, 0.6),
+      0 0 30px rgba(255, 255, 255, 0.15) !important;
+    transform: scale(0.85) !important;
+    opacity: 0 !important;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.35s ease !important;
+    line-height: 0 !important;
+    box-sizing: border-box !important;
   }
 
-  .discount-popup-bg {
-    position: absolute;
-    inset: 0;
+  .discount-popup-overlay.is-active .discount-popup-container {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+  }
+
+  /* Desktop image */
+  .discount-popup-img-desktop {
+    display: block !important;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
   }
 
-  .discount-popup-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 100%);
-    z-index: 1;
+  /* Mobile wrap - hidden on desktop */
+  .discount-popup-mobile-wrap {
+    display: none !important;
   }
 
-  .discount-popup-content {
-    position: relative;
-    z-index: 2;
-    max-width: 450px;
+  /* Mobile image */
+  .discount-popup-img-mobile {
+    display: block !important;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
   }
 
   .discount-popup-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-    background: #fff;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 10;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  .discount-popup-overlay.is-active .discount-popup-close {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s;
   }
 
   .discount-popup-close:hover {
-    transform: scale(1.1);
+    background: #ffffff;
+    transform: rotate(90deg) scale(1.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 
   .discount-popup-close svg {
-    width: 16px;
-    height: 16px;
-    fill: #333;
+    width: 15px;
+    height: 15px;
+    fill: #1a1a1a;
   }
 
-  .discount-popup-heading-small {
-    font-size: 1.8rem;
-    font-style: italic;
-    margin-bottom: 10px;
-    font-weight: 300;
-  }
-
-  .discount-popup-heading-large {
-    font-size: 3.6rem;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    color: #ffffff !important;
-  }
-
-  .discount-popup-description {
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-    font-weight: 400;
-  }
-
-  .discount-popup-form .field {
-    margin-bottom: 15px;
-  }
-
-  .discount-popup-form input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1.4rem;
-    background: #fff;
-    color: #333;
-  }
-
-  .discount-popup-submit {
-    width: 100%;
-    padding: 15px;
-    background: #c5b3a3;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background 0.3s;
-    margin-top: 10px;
-  }
-
-  .discount-popup-submit:hover {
-    background: #b09c8a;
-  }
-
-  .discount-popup-success {
-    display: none;
-    text-align: center;
-    animation: fadeIn 0.5s ease;
-    position: relative;
-    z-index: 2;
-  }
-
-  .discount-popup-code-box {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 2px dashed #fff;
-    padding: 40px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-  }
-
-  .discount-popup-code {
-    font-size: 3.6rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 12px;
-    color: #000000 !important;
-  }
-
-  .discount-popup-copy {
-    background: #000000;
-    color: #ffffff;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 140px;
-    user-select: none;
-    -webkit-user-select: none;
-    position: relative;
-    z-index: 3;
-    pointer-events: auto;
-    touch-action: manipulation;
-  }
-
-  .discount-popup-copy:hover {
-    background: #333333;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @media screen and (max-width: 749px) {
+  /* Large desktop */
+  @media screen and (min-width: 1400px) {
     .discount-popup-container {
-      padding: 30px 20px;
-      min-height: auto;
+      max-width: 800px;
     }
-    .discount-popup-heading-large {
-      font-size: 2.4rem;
+  }
+
+  /* Tablet landscape */
+  @media screen and (max-width: 1024px) {
+    .discount-popup-container {
+      width: 85%;
+      max-width: 650px;
     }
-    .discount-popup-content {
-      max-width: 100%;
+  }
+
+  /* ========================================================
+     Pill Email Box - Global Styles (Desktop + Mobile)
+     ======================================================== */
+  .discount-popup-input-pill {
+    display: flex !important;
+    align-items: center !important;
+    background: #ffffff !important;
+    border: 1px solid #717773 !important;
+    border-radius: 999px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    transition: border-color 0.2s, box-shadow 0.2s !important;
+    box-sizing: border-box !important;
+  }
+
+  .discount-popup-input-pill:focus-within {
+    border-color: #1a1a1a !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  .discount-popup-input {
+    flex: 1 !important;
+    min-width: 0 !important;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    color: #222222 !important;
+    font-family: inherit !important;
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+
+  .discount-popup-input::placeholder {
+    color: #7d8480 !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+  }
+
+  .discount-popup-arrow-btn {
+    background: #232725 !important;
+    border-radius: 50% !important;
+    border: none !important;
+    outline: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    color: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: transform 0.2s, background 0.2s !important;
+    flex-shrink: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .discount-popup-arrow-btn:active {
+    transform: scale(0.92) !important;
+  }
+
+  /* Unified Floating Feedback at the bottom of the popup box */
+  .discount-popup-feedback {
+    position: absolute !important;
+    bottom: 14px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: #ffffff !important;
+    color: #1b5e20 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    padding: 7px 22px !important;
+    border-radius: 999px !important;
+    border: 1px solid #c8e6c9 !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22) !important;
+    white-space: nowrap !important;
+    z-index: 25 !important;
+    pointer-events: none !important;
+    line-height: normal !important;
+    animation: popupFeedbackIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+  }
+
+  @keyframes popupFeedbackIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 12px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  /* Desktop Email Box Overlay */
+  .discount-popup-desktop-wrap {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    line-height: 0;
+  }
+
+  .discount-popup-desktop-form {
+    position: absolute;
+    top: 69.4%;
+    left: 3.4%;
+    transform: translateY(-50%);
+    width: 50.4%;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+
+  .discount-popup-pill-desktop {
+    padding: 3px 5px 3px 20px !important;
+  }
+
+  .discount-popup-pill-desktop .discount-popup-input {
+    font-size: 15px !important;
+    padding: 8px 0 !important;
+  }
+
+  .discount-popup-pill-desktop .discount-popup-input::placeholder {
+    font-size: 14.5px !important;
+  }
+
+  .discount-popup-pill-desktop .discount-popup-arrow-btn {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    margin-left: 8px !important;
+  }
+
+  .discount-popup-pill-desktop .discount-popup-arrow-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* Tablet portrait + mobile */
+  @media screen and (max-width: 768px) {
+    .discount-popup-feedback {
+      bottom: 10px !important;
+      font-size: 12px !important;
+      padding: 6px 18px !important;
+    }
+    .discount-popup-desktop-wrap {
+      display: none !important;
+    }
+    .discount-popup-container {
+      width: 88%;
+      max-width: 360px;
+    }
+    .discount-popup-img-desktop {
+      display: none !important;
+    }
+    .discount-popup-mobile-wrap {
+      display: block !important;
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+    .discount-popup-close {
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+    }
+    .discount-popup-close svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* Mobile Email Input Pill Overlay */
+    .discount-popup-mobile-form {
+      position: absolute;
+      top: 42.4%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 79%;
+      z-index: 5;
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+    }
+
+    .discount-popup-input-pill {
+      padding: 3px 4px 3px 16px !important;
+    }
+
+    .discount-popup-input {
+      font-size: 13.5px !important;
+      padding: 7px 0 !important;
+    }
+
+    .discount-popup-input::placeholder {
+      font-size: 13px !important;
+    }
+
+    .discount-popup-arrow-btn {
+      width: 34px !important;
+      height: 34px !important;
+      min-width: 34px !important;
+      margin-left: 6px !important;
+    }
+
+    .discount-popup-arrow-btn svg {
+      width: 16px !important;
+      height: 16px !important;
+    }
+  }
+
+  /* Small mobile */
+  @media screen and (max-width: 360px) {
+    .discount-popup-container {
+      width: 92%;
+      max-width: 300px;
+    }
+    .discount-popup-input {
+      font-size: 12.5px !important;
+      padding: 5px 0 !important;
+    }
+    .discount-popup-input::placeholder {
+      font-size: 12px !important;
+    }
+    .discount-popup-arrow-btn {
+      width: 30px !important;
+      height: 30px !important;
+      min-width: 30px !important;
+    }
+    .discount-popup-arrow-btn svg {
+      width: 14px !important;
+      height: 14px !important;
     }
   }
 {%- endstyle -%}
 
-{%- assign popup_fallback_image = 'https://cdn.shopify.com/s/files/1/0765/9021/9549/files/POP_UP.png?v=1774270785' -%}
-{%- assign popup_background_src = popup_fallback_image -%}
+{%- assign desktop_fallback = 'https://cdn.shopify.com/s/files/1/0765/9021/9549/files/Seven_Oral_Care_Tester_Launch.png?v=1791617278' -%}
+{%- assign mobile_fallback = 'https://cdn.shopify.com/s/files/1/0765/9021/9549/files/Seven_Oral_Care_Tester_List_5f145928-43da-4aaf-a3a1-a04d9d2fc474.png?v=1791617984' -%}
+
+{%- assign popup_desktop_src = desktop_fallback -%}
 {%- if section.settings.image != blank -%}
-  {%- assign popup_background_src = section.settings.image | img_url: 'master' -%}
+  {%- assign popup_desktop_src = section.settings.image | img_url: 'master' -%}
+{%- endif -%}
+
+{%- assign popup_mobile_src = mobile_fallback -%}
+{%- if section.settings.mobile_image != blank -%}
+  {%- assign popup_mobile_src = section.settings.mobile_image | img_url: 'master' -%}
 {%- endif -%}
 
 <div id="DiscountPopupOverlay" class="discount-popup-overlay" data-delay="{{ section.settings.delay | times: 1000 }}">
-  <div
-    class="discount-popup-container"
-    style="background-image: url('{{ popup_background_src }}'); background-color: #1a1a1a;"
-  >
-    <div class="discount-popup-close" id="DiscountPopupClose">
+  <div class="discount-popup-container">
+    <button class="discount-popup-close" id="DiscountPopupClose" aria-label="Close popup">
       <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-    </div>
+    </button>
 
-    <!-- STEP 1: COLLECT DATA -->
-    <div class="discount-popup-content" id="DiscountPopupMain">
-      <div class="discount-popup-heading-small">{{ section.settings.heading_small }}</div>
-      <h2 class="discount-popup-heading-large">{{ section.settings.heading_large }}</h2>
-      <p class="discount-popup-description">{{ section.settings.description }}</p>
+    <div class="discount-popup-desktop-wrap">
+      {% if section.settings.popup_link != blank %}
+        <a href="{{ section.settings.popup_link }}" style="display:block;line-height:0;">
+          <img class="discount-popup-img-desktop" src="{{ popup_desktop_src }}" alt="{{ section.settings.heading_large | default: 'Special Offer' | escape }}" loading="eager">
+        </a>
+      {% else %}
+        <img class="discount-popup-img-desktop" src="{{ popup_desktop_src }}" alt="{{ section.settings.heading_large | default: 'Special Offer' | escape }}" loading="eager">
+      {% endif %}
 
-      {%- form 'customer', id: 'DiscountPopupForm', class: 'discount-popup-form' -%}
-        <input type="hidden" name="contact[tags]" value="newsletter, popup-discount">
-        <div class="field">
-          <input type="email" name="contact[email]" placeholder="email@xyz.com" required>
+      {%- form 'customer', id: 'DiscountPopupDesktopForm', class: 'discount-popup-desktop-form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter, tester-list">
+        <div class="discount-popup-input-pill discount-popup-pill-desktop">
+          <input
+            type="email"
+            name="contact[email]"
+            class="discount-popup-input"
+            id="DiscountPopupEmailDesktop"
+            placeholder="Your email address"
+            required
+            autocomplete="email"
+          >
+          <button type="submit" class="discount-popup-arrow-btn" id="DiscountPopupSubmitBtnDesktop" aria-label="Submit">
+            <svg viewBox="0 0 24 24" class="discount-popup-arrow-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+            <span class="discount-popup-success-icon" style="display:none;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </span>
+          </button>
         </div>
-        <div class="field">
-          <input type="tel" name="contact[phone]" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10">
-        </div>
-        <button type="button" class="discount-popup-submit" id="DiscountPopupSubmit">Unlock Now</button>
       {%- endform -%}
     </div>
 
-    <!-- STEP 2: REVEAL CODE -->
-    <div class="discount-popup-success" id="DiscountPopupSuccess">
-      <h2 class="discount-popup-heading-large">Your Code is Ready!</h2>
-      <div class="discount-popup-code-box">
-        <span class="discount-popup-code">{{ section.settings.discount_code }}</span>
-        
-        <button
-          type="button"
-          class="discount-popup-copy"
-          id="DiscountPopupCopyBtn"
-          data-code="{{ section.settings.discount_code | escape }}"
-        >
-          <span id="CopyBtnText">Copy Code</span>
-          <span id="CopyBtnTick" style="display:none;">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align: middle; margin-right: 5px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-            Copied!
-          </span>
-        </button>
+    <div class="discount-popup-mobile-wrap">
+      <img class="discount-popup-img-mobile" src="{{ popup_mobile_src }}" alt="{{ section.settings.heading_large | default: 'Special Offer' | escape }}" loading="eager">
 
-        {% if section.settings.disclaimer != blank %}
-          <p style="font-size: 1.2rem; margin-top: 15px; color: #000000; font-weight: 500;">{{ section.settings.disclaimer }}</p>
-        {% endif %}
-      </div>
-      <p>{{ section.settings.success_description }}</p>
+      {%- form 'customer', id: 'DiscountPopupMobileForm', class: 'discount-popup-mobile-form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter, tester-list">
+        <div class="discount-popup-input-pill">
+          <input
+            type="email"
+            name="contact[email]"
+            class="discount-popup-input"
+            id="DiscountPopupEmail"
+            placeholder="Your email address"
+            required
+            autocomplete="email"
+          >
+          <button type="submit" class="discount-popup-arrow-btn" id="DiscountPopupSubmitBtn" aria-label="Submit">
+            <svg viewBox="0 0 24 24" class="discount-popup-arrow-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+            <span class="discount-popup-success-icon" style="display:none;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </span>
+          </button>
+        </div>
+      {%- endform -%}
+    </div>
+
+    <!-- Unified Floating Feedback Message at the Very Bottom of Popup Container -->
+    <div class="discount-popup-feedback" id="DiscountPopupGlobalFeedback" style="display:none;">
+      ✓ Thank you for joining!
     </div>
   </div>
 </div>
 
 <script>
 (function() {
-  function initDiscountPopup() {
-    const overlay = document.getElementById('DiscountPopupOverlay');
-    if (!overlay || overlay.getAttribute('data-popup-initialized') === 'true') return;
+  // Clear any existing session/local storage flags so popup is never blocked during testing
+  ['discount_popup_seen', 'discount_popup_seen_v3', 'discount_popup_seen_v5', 'discount_popup_seen_final', 'discount_popup_seen_live'].forEach(function(k) {
+    try { sessionStorage.removeItem(k); } catch(e) {}
+    try { localStorage.removeItem(k); } catch(e) {}
+  });
 
-    // 1. Visibility logic
-    const delay = parseInt(overlay.getAttribute('data-delay')) || 3000;
-    if (!localStorage.getItem('discount_popup_seen')) {
-      setTimeout(function() {
-        var el = document.getElementById('DiscountPopupOverlay');
-        if (el) el.classList.add('is-active');
-      }, delay);
+  function showPopup() {
+    var overlay = document.getElementById('DiscountPopupOverlay');
+    if (overlay) {
+      overlay.classList.add('is-active');
     }
+  }
 
-    // Use event delegation on the overlay so it works even after slow/late rendering
+  function hidePopup() {
+    var overlay = document.getElementById('DiscountPopupOverlay');
+    if (overlay) {
+      overlay.classList.remove('is-active');
+    }
+  }
+
+  function initDiscountPopup() {
+    var overlay = document.getElementById('DiscountPopupOverlay');
+    if (!overlay) return;
+
+    // Automatically trigger popup display after brief delay
+    setTimeout(showPopup, 400);
+
+    // Setup close triggers (clicking overlay backdrop or close button)
     overlay.addEventListener('click', function(e) {
-      var target = e.target;
-
-      // 2. Close on overlay background click
-      if (target === overlay) {
-        overlay.classList.remove('is-active');
-        localStorage.setItem('discount_popup_seen', 'true');
-        return;
+      if (e.target === overlay || e.target.closest('#DiscountPopupClose')) {
+        hidePopup();
       }
+    });
 
-      // 2b. Close button
-      if (target.closest('#DiscountPopupClose')) {
-        overlay.classList.remove('is-active');
-        localStorage.setItem('discount_popup_seen', 'true');
-        return;
-      }
+    // Helper for AJAX form handling
+    function bindPopupForm(formId, emailId, btnId) {
+      var form = document.getElementById(formId);
+      if (!form || form.getAttribute('data-bound') === 'true') return;
+      form.setAttribute('data-bound', 'true');
 
-      // 3. Form submit button
-      if (target.closest('#DiscountPopupSubmit')) {
-        var form = document.getElementById('DiscountPopupForm');
-        if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var emailInput = document.getElementById(emailId);
+        if (!emailInput || !emailInput.value) return;
 
-        var email = form.querySelector('input[type="email"]').value;
-        var phone = form.querySelector('input[type="tel"]').value;
-
-        if (!email || !email.includes('@')) {
-          alert('Please enter a valid email.');
-          return;
-        }
-        if (phone && phone.length !== 10) {
-          alert('Please enter a 10-digit phone number.');
-          return;
-        }
-
-        var mainArea = document.getElementById('DiscountPopupMain');
-        var successArea = document.getElementById('DiscountPopupSuccess');
-        if (mainArea) mainArea.style.display = 'none';
-        if (successArea) successArea.style.display = 'block';
-        localStorage.setItem('discount_popup_seen', 'true');
+        var btn = document.getElementById(btnId);
+        var arrowIcon = btn ? btn.querySelector('.discount-popup-arrow-icon') : null;
+        var successIcon = btn ? btn.querySelector('.discount-popup-success-icon') : null;
+        var feedback = document.getElementById('DiscountPopupGlobalFeedback');
 
         fetch(form.action, {
           method: 'POST',
           body: new FormData(form),
           headers: { 'Accept': 'application/json' }
-        });
-        return;
-      }
+        }).catch(function() {});
 
-      // 4. Copy discount code
-      var copyBtn = target.closest('#DiscountPopupCopyBtn');
-      if (copyBtn) {
-        e.preventDefault();
-        e.stopPropagation();
+        if (arrowIcon) arrowIcon.style.display = 'none';
+        if (successIcon) successIcon.style.display = 'block';
+        if (btn) btn.style.background = '#2e7d32';
+        if (feedback) feedback.style.display = 'block';
 
-        var code = copyBtn.getAttribute('data-code') || '';
-        if (!code) return;
+        setTimeout(function() {
+          hidePopup();
+        }, 2500);
+      });
+    }
 
-        function setCopyFeedback() {
-          var btnText = document.getElementById('CopyBtnText');
-          var btnTick = document.getElementById('CopyBtnTick');
-          if (btnText) btnText.style.display = 'none';
-          if (btnTick) btnTick.style.display = 'inline-block';
-          copyBtn.style.backgroundColor = '#4caf50';
-          setTimeout(function() {
-            if (btnText) btnText.style.display = 'inline-block';
-            if (btnTick) btnTick.style.display = 'none';
-            copyBtn.style.backgroundColor = '#000000';
-          }, 2000);
-        }
-
-        function fallbackCopy(text) {
-          var tempInput = document.createElement('textarea');
-          tempInput.value = text;
-          tempInput.setAttribute('readonly', '');
-          tempInput.style.cssText = 'position:fixed;top:-9999px;left:-9999px;opacity:0;';
-          document.body.appendChild(tempInput);
-          tempInput.focus();
-          tempInput.select();
-          tempInput.setSelectionRange(0, tempInput.value.length);
-          var copied = false;
-          try { copied = document.execCommand('copy'); } catch (err) { copied = false; }
-          document.body.removeChild(tempInput);
-          if (window.getSelection) window.getSelection().removeAllRanges();
-          return copied;
-        }
-
-        if (navigator.clipboard && window.isSecureContext) {
-          navigator.clipboard.writeText(code).then(setCopyFeedback).catch(function() {
-            if (fallbackCopy(code)) setCopyFeedback();
-          });
-        } else {
-          if (fallbackCopy(code)) setCopyFeedback();
-        }
-        return;
-      }
-    });
-
-    overlay.setAttribute('data-popup-initialized', 'true');
+    bindPopupForm('DiscountPopupMobileForm', 'DiscountPopupEmail', 'DiscountPopupSubmitBtn');
+    bindPopupForm('DiscountPopupDesktopForm', 'DiscountPopupEmailDesktop', 'DiscountPopupSubmitBtnDesktop');
   }
 
-  // Init on DOMContentLoaded or immediately if already loaded
+  // Expose global functions for manual triggering / testing
+  window.openDiscountPopup = showPopup;
+  window.closeDiscountPopup = hidePopup;
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initDiscountPopup);
   } else {
     initDiscountPopup();
   }
 
-  // Re-init when Shopify re-renders the section (theme editor or lazy load)
-  document.addEventListener('shopify:section:load', function(e) {
-    if (e.target.querySelector('#DiscountPopupOverlay')) {
-      initDiscountPopup();
-    }
-  });
+  document.addEventListener('shopify:section:load', initDiscountPopup);
+  document.addEventListener('shopify:section:select', showPopup);
 })();
 </script>
-
-{% endif %}
 
 {% schema %}
 {
@@ -428,43 +545,23 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Background Image"
+      "label": "Desktop Image"
     },
     {
-      "type": "text",
-      "id": "heading_small",
-      "label": "Small Heading",
-      "default": "Ready for a surprise ?"
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "url",
+      "id": "popup_link",
+      "label": "Link (optional)"
     },
     {
       "type": "text",
       "id": "heading_large",
-      "label": "Large Heading",
-      "default": "UNLOCK THE MYSTERY DISCOUNT"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "Description",
-      "default": "Enter your email and phone to get exclusive discount"
-    },
-    {
-      "type": "text",
-      "id": "discount_code",
-      "label": "Discount Code",
-      "default": "Surprise10"
-    },
-    {
-      "type": "text",
-      "id": "success_description",
-      "label": "Success Message",
-      "default": "Use this code at checkout for your exclusive discount."
-    },
-    {
-      "type": "text",
-      "id": "disclaimer",
-      "label": "Disclaimer Text",
-      "default": "*only applicable on orders above ₹1,000"
+      "label": "Image Alt Text",
+      "default": "Special Offer"
     },
     {
       "type": "range",
