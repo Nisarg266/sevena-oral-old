@@ -1,0 +1,31 @@
+{% assign linkactive = false %}
+<style>
+  .collection-tabs .collection-tab-item a {
+    display: inline-block;
+  }
+  .collection-tabs .collection-tab-item {
+    margin-bottom: 16px !important;
+  }
+</style>
+<div class="collection-tabs page-width">
+  <div class="collection-tab-list">
+    {% for link in linklists.collection-tab.links %}
+      {% if collection.url == link.url %}
+        {% assign linkactive = true %}
+      {% else %}
+        {% assign linkactive = false %}
+      {% endif %}
+      {% unless link.title == 'SuperBundles' or link.title == 'Travel Buddies' or link.title == 'Adapters' %}
+      <div class="collection-tab-item {% if linkactive %}active{% endif %}">
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </div>
+    {% endunless %}
+    {% endfor %}
+    <div class="collection-tab-item {% if linkactive %}active{% endif %}">
+        <a href="/collections/kids">Kids</a>
+      </div>
+    <div class="collection-tab-item {% if linkactive %}active{% endif %}">
+        <a href="/products/super-mint-toothpaste">Toothpaste</a>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{{ card_collection }} fdfdf 
+<div class="cart-collection">
+        <h2>You May Also Like</h2>
+        <div class="cart-collection-item">
+          {% assign collection = collections[card_collection] %}
+          {% for cartitem in collection.products %}
+          <div class="cart-collection-list">
+            <div class="cart-coll-image">
+              <a href="{{ cartitem.url }}"><img src="{{ cartitem.featured_media | image_url: width: 720 }}"></a>
+            </div>
+            <div class="cart-coll-info">
+              <h3><a href="{{ cartitem.url }}">{{cartitem.title}}</a></h3>
+              <p><a href="{{ cartitem.url }}">{{ cartitem.selected_or_first_available_variant.title }}</a></p>
+              <div class="button-addtocart" var_id="{{ cartitem.selected_or_first_available_variant.id }}">BUY NOW - <span>{{ cartitem.price | money_with_currency}}</span></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+</div>

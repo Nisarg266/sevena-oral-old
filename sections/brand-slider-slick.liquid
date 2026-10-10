@@ -1,0 +1,209 @@
+{% comment %}{%- capture flickity_options -%}
+{
+  "prevNextButtons": false,
+  "pageDots": false,
+  "draggable": false,
+  "cellAlign": "center",
+  "wrapAround": false,
+  "percentPosition": false
+}
+{%- endcapture -%}
+
+<div class="brand-slider-container">
+  <h2 class="title h2">{{ section.settings.title }}</h2>
+  <div class="brands-area">
+   {%- for block in section.blocks -%} 
+    <div class="brand-item-image {% if forloop.index == 1 %}is-active{% endif %}" index="{{ forloop.index }}">
+      <a href="{{ block.settings.url }}" target="_blank" >
+        <img src="{{ block.settings.image | image_url: width: 1420 }}"/>
+      </a>
+    </div>
+   {% endfor %}
+  </div>
+  <div class="brands-txt-area" data-flickity='{{ flickity_desktop_inner_options }}'>
+    {%- for block in section.blocks -%} 
+    <div class="brand-item-content" index="{{ forloop.index }}">
+      <p>{{ block.settings.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="brand-slider-dots">
+    {%- for block in section.blocks -%}
+      <div class="bdots {% if forloop.index == 1 %}active{% endif %}" index="{{ forloop.index }}"></div>
+    {% endfor %}
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+    {% if section.settings.autoplay != blank %}
+    //setTimeout(autoslides, {{section.settings.autoplay}});
+    setInterval(autoslides, {{section.settings.autoplay}});
+    {% endif %}
+    function autoslides() {
+      console.log($('details-modal.header__search details').attr('open'));
+      if($('details-modal.header__search details[open="true"]').length) {
+      } else {
+      var count = $('.brand-slider-dots .bdots').size();
+      var index = $('.brand-slider-dots .bdots.active').attr('index');
+      if(index == count) {
+        index = 1;
+      } else {
+        index = parseInt(index) + 1;
+      }
+      cls = '.brand-slider-dots .bdots[index="'+index+'"]';
+      $(cls).click();
+      }  
+    }
+    $('.brands-area .brand-item-image img').click(function() {
+      $('.brands-area .brand-item-image').removeClass('is-active');
+      $('.brand-slider-dots .bdots').removeClass('active');
+      var index = $(this).parent('.brand-item-image').attr('index');
+      bclass = '.brand-slider-dots .bdots[index="'+index+'"]';
+      $(bclass).addClass('active');
+      $(this).parent('.brand-item-image').addClass('is-active');
+      nclass = '.brands-txt-area ol.flickity-page-dots li:nth-child('+index+')';
+      $(nclass).click();
+      {% if section.settings.autoplay != blank %}
+     // setTimeout(autoslides, {{section.settings.autoplay}});
+      {% endif %}
+    });
+    $('.brand-slider-dots .bdots').click(function() {
+      var index = $(this).attr('index');
+      nclass = '.brands-area .brand-item-image[index="'+index+'"] img';
+      $(nclass).click();
+    });
+    
+  });
+</script>  
+{% endcomment %}
+
+
+<div class="brand-slider-container">
+  <h2 class="title h2">{{ section.settings.title }}</h2>
+  <div class="brands-area">
+    {%- for block in section.blocks -%}
+      <div class="brand-item-image" index="{{ forloop.index }}">
+        <a href="{{ block.settings.url }}" target="_blank">
+          <img src="{{ block.settings.image | image_url: width: 1420 }}"/>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="brands-txt-area">
+    {%- for block in section.blocks -%} 
+      <div class="brand-item-content" index="{{ forloop.index }}">
+        <p>{{ block.settings.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<script>
+$('.brands-area').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+
+{% schema %}
+  {
+    "name": "Brand Slider",
+    "tag": "section",
+    "class": "section brand-slider",
+    "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+      },
+      {
+      "type": "text",
+      "id": "autoplay",
+      "default": "5000",
+      "label": "Autoplay Timer"
+      }
+    ],
+    "max_blocks": 7,
+    "blocks": [
+    {
+      "type": "brand",
+      "name": "brand",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Brand Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Brand Description"
+        },
+        {
+        "type": "url",
+        "id": "url",
+        "label": "Brand URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Slider",
+      "blocks": [
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        }
+      ]
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
