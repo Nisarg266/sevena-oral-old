@@ -117,12 +117,23 @@
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %} desk-only">
           {%- if block.settings.image -%}
             {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
-            {{ block.settings.image | image_url: width: 3840 | image_tag:
-              loading: 'lazy',
-              height: height,
-              sizes: "100vw",
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-            }}
+            {%- if forloop.first -%}
+              {{ block.settings.image | image_url: width: 2000 | image_tag:
+                loading: 'eager',
+                fetchpriority: 'high',
+                height: height,
+                sizes: "100vw",
+                widths: '750, 1100, 1500, 1780, 2000'
+              }}
+            {%- else -%}
+              {{ block.settings.image | image_url: width: 2000 | image_tag:
+                loading: 'lazy',
+                decoding: 'async',
+                height: height,
+                sizes: "100vw",
+                widths: '750, 1100, 1500, 1780, 2000'
+              }}
+            {%- endif -%}
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
@@ -130,12 +141,23 @@
         <div class="slideshow__media banner__media media{% if block.settings.mobile_image == blank %} placeholder{% endif %} mob-only" style="display:none;">
           {%- if block.settings.mobile_image -%}
             {%- assign height = block.settings.mobile_image.width | divided_by: block.settings.mobile_image.aspect_ratio | round -%}
-            {{ block.settings.mobile_image | image_url: width: 3840 | image_tag:
-              loading: 'lazy',
-              height: height,
-              sizes: "100vw",
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-            }}
+            {%- if forloop.first -%}
+              {{ block.settings.mobile_image | image_url: width: 1100 | image_tag:
+                loading: 'eager',
+                fetchpriority: 'high',
+                height: height,
+                sizes: "100vw",
+                widths: '375, 550, 750, 1100'
+              }}
+            {%- else -%}
+              {{ block.settings.mobile_image | image_url: width: 1100 | image_tag:
+                loading: 'lazy',
+                decoding: 'async',
+                height: height,
+                sizes: "100vw",
+                widths: '375, 550, 750, 1100'
+              }}
+            {%- endif -%}
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
