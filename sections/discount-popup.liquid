@@ -26,9 +26,10 @@
 
   .discount-popup-container {
     position: relative !important;
-    width: 90% !important;
-    max-width: 750px !important;
-    border-radius: 4px !important;
+    width: fit-content !important;
+    max-width: min(90vw, 460px) !important;
+    max-height: 76vh !important;
+    border-radius: 6px !important;
     overflow: hidden !important;
     border: 2px solid #ffffff !important;
     box-shadow:
@@ -49,8 +50,10 @@
   /* Desktop image */
   .discount-popup-img-desktop {
     display: block !important;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 76vh !important;
+    width: auto !important;
+    height: auto !important;
     border-radius: 4px;
     object-fit: contain;
   }
@@ -110,15 +113,17 @@
   /* Large desktop */
   @media screen and (min-width: 1400px) {
     .discount-popup-container {
-      max-width: 800px;
+      max-width: min(90vw, 480px) !important;
+      max-height: 76vh !important;
     }
   }
 
   /* Tablet landscape */
   @media screen and (max-width: 1024px) {
     .discount-popup-container {
-      width: 85%;
-      max-width: 650px;
+      width: fit-content !important;
+      max-width: min(88vw, 440px) !important;
+      max-height: 76vh !important;
     }
   }
 
@@ -217,16 +222,17 @@
   .discount-popup-desktop-wrap {
     display: block !important;
     position: relative;
-    width: 100%;
+    max-height: 76vh;
     line-height: 0;
   }
 
   .discount-popup-desktop-form {
     position: absolute;
-    top: 69.4%;
-    left: 3.4%;
+    top: 37%;
+    left: calc(4.5% - 5px);
     transform: translateY(-50%);
-    width: 50.4%;
+    width: 55%;
+    max-width: 320px;
     z-index: 5;
     margin: 0;
     padding: 0;
@@ -234,28 +240,28 @@
   }
 
   .discount-popup-pill-desktop {
-    padding: 3px 5px 3px 20px !important;
+    padding: 3px 5px 3px 18px !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-input {
-    font-size: 15px !important;
-    padding: 8px 0 !important;
+    font-size: 14px !important;
+    padding: 7px 0 !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-input::placeholder {
-    font-size: 14.5px !important;
+    font-size: 13.5px !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-arrow-btn {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-    margin-left: 8px !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    margin-left: 6px !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-arrow-btn svg {
-    width: 18px !important;
-    height: 18px !important;
+    width: 17px !important;
+    height: 17px !important;
   }
 
   /* Tablet portrait + mobile */
@@ -269,8 +275,9 @@
       display: none !important;
     }
     .discount-popup-container {
-      width: 88%;
-      max-width: 360px;
+      width: fit-content !important;
+      max-width: min(85vw, 310px) !important;
+      max-height: 78vh !important;
     }
     .discount-popup-img-desktop {
       display: none !important;
@@ -279,7 +286,17 @@
       display: block !important;
       position: relative;
       width: 100%;
+      max-height: 78vh;
       line-height: 0;
+    }
+    .discount-popup-img-mobile {
+      display: block !important;
+      max-width: 100%;
+      max-height: 78vh !important;
+      width: auto !important;
+      height: auto !important;
+      border-radius: 4px;
+      object-fit: contain;
     }
     .discount-popup-close {
       top: 8px;
@@ -295,10 +312,10 @@
     /* Mobile Email Input Pill Overlay */
     .discount-popup-mobile-form {
       position: absolute;
-      top: 42.4%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 79%;
+      top: 37%;
+      left: calc(5% - 5px);
+      transform: translateY(-50%);
+      width: 58%;
       z-index: 5;
       margin: 0;
       padding: 0;
@@ -306,28 +323,28 @@
     }
 
     .discount-popup-input-pill {
-      padding: 3px 4px 3px 16px !important;
+      padding: 2px 3px 2px 12px !important;
     }
 
     .discount-popup-input {
-      font-size: 13.5px !important;
-      padding: 7px 0 !important;
+      font-size: 12px !important;
+      padding: 4px 0 !important;
     }
 
     .discount-popup-input::placeholder {
-      font-size: 13px !important;
+      font-size: 11.5px !important;
     }
 
     .discount-popup-arrow-btn {
-      width: 34px !important;
-      height: 34px !important;
-      min-width: 34px !important;
-      margin-left: 6px !important;
+      width: 27px !important;
+      height: 27px !important;
+      min-width: 27px !important;
+      margin-left: 4px !important;
     }
 
     .discount-popup-arrow-btn svg {
-      width: 16px !important;
-      height: 16px !important;
+      width: 13px !important;
+      height: 13px !important;
     }
   }
 
@@ -338,20 +355,20 @@
       max-width: 300px;
     }
     .discount-popup-input {
-      font-size: 12.5px !important;
-      padding: 5px 0 !important;
+      font-size: 11.5px !important;
+      padding: 3px 0 !important;
     }
     .discount-popup-input::placeholder {
-      font-size: 12px !important;
+      font-size: 11px !important;
     }
     .discount-popup-arrow-btn {
-      width: 30px !important;
-      height: 30px !important;
-      min-width: 30px !important;
+      width: 26px !important;
+      height: 26px !important;
+      min-width: 26px !important;
     }
     .discount-popup-arrow-btn svg {
-      width: 14px !important;
-      height: 14px !important;
+      width: 13px !important;
+      height: 13px !important;
     }
   }
 {%- endstyle -%}
