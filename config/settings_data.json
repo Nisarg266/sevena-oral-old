@@ -418,8 +418,8 @@
         "type": "discount-popup",
         "settings": {
           "show_section": true,
-          "image": "shopify://shop_images/48d7b117-cde2-4501-9778-62f6accfaf62_e1147b42-851a-4900-85cd-7c2722d3f1b9.png",
-          "mobile_image": "shopify://shop_images/48d7b117-cde2-4501-9778-62f6accfaf62_e1147b42-851a-4900-85cd-7c2722d3f1b9.png",
+          "image": "shopify://shop_images/48d7b117-cde2-4501-9778-62f6accfaf62_a9ce6b22-0815-4360-ac2b-b01ee0f8e772.png",
+          "mobile_image": "shopify://shop_images/48d7b117-cde2-4501-9778-62f6accfaf62_a9ce6b22-0815-4360-ac2b-b01ee0f8e772.png",
           "popup_link": "",
           "heading_large": "UNLOCK THE MYSTERY DISCOUNT",
           "delay": 3
