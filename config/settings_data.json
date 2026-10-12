@@ -1,1 +1,614 @@
-{"current":{"logo":"shopify:\/\/shop_images\/Logo_80cdbff7-9299-4098-b991-94a014100ce9.svg","logo_width":70,"favicon":"shopify:\/\/shop_images\/Favcon.svg","colors_solid_button_labels":"#ffffff","colors_accent_1":"#121212","gradient_accent_1":"","colors_accent_2":"#334fb4","gradient_accent_2":"","colors_text":"#3e3e3f","colors_outline_button_labels":"#3e3e3f","colors_background_1":"#ffffff","gradient_background_1":"","colors_background_2":"#3e3e3f","gradient_background_2":"","type_header_font":"futura_n4","heading_scale":100,"type_body_font":"poppins_n4","body_scale":100,"page_width":1600,"spacing_sections":0,"spacing_grid_horizontal":32,"spacing_grid_vertical":36,"buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":0,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":4,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":4,"inputs_shadow_blur":5,"card_style":"standard","card_image_padding":0,"card_text_alignment":"left","card_color_scheme":"background-2","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"background-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"background-2","blog_card_border_thickness":0,"blog_card_border_opacity":0,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":0,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"top left","badge_corner_radius":40,"sale_badge_color_scheme":"accent-1","sold_out_badge_color_scheme":"inverse","accent_icons":"text","brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_facebook_link":"","social_instagram_link":"https:\/\/instagram.com\/sevenoralcare?igshid=MzRlODBiNWFlZA==","social_youtube_link":"","social_tiktok_link":"","social_twitter_link":"","social_snapchat_link":"","social_pinterest_link":"","social_tumblr_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":true,"currency_code_enabled":true,"cart_type":"drawer","show_vendor":false,"show_cart_note":true,"offer_txt":"Get 10% off on your first order","cart_drawer_collection":"shop-all","checkout_logo_image":"shopify:\/\/shop_images\/Email_Checkoutpages.svg","checkout_accent_color":"#3e3e3f","checkout_button_color":"#3e3e3f","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"background-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"background-1"}},"collapsible-content":{"type":"collapsible-content","blocks":{"14bc3fd8-d1f4-4a81-84eb-9274921a9c47":{"type":"collapsible_row","settings":{"heading":"Collapsible row","icon":"check_mark","row_content":"<p>aa<\/p>","page":""}}},"block_order":["14bc3fd8-d1f4-4a81-84eb-9274921a9c47"],"settings":{"caption":"","heading":"Collapsible content","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"faqs1":{"type":"faqs1","blocks":{"abfbfc34-dc07-4d03-aa5d-ac53fc7ecee6":{"type":"collapsible_row","settings":{"heading":"How should I clean and store my SuperBrush?","row_content":"<p><br\/>Clean your SuperBrush everyday post brushing by just rinsing it with water. Let it air dry in an upright position. Do not store your SuperBrush in wet conditions or in contact with other toiletries or cosmetics as the harmful chemicals can corrode the body of the brush. When travelling, we recommend using our travel case – it’s handy and cute too! We don’t recommend keeping it in any airtight or closed space like a drawer, and don’t use a toothbrush cover either - both of these retain moisture which promotes the growth of a bacterial\/fungal environment.<\/p>","page":""}},"07d4046c-19e7-4ba0-9bfd-f2beabf622b1":{"type":"collapsible_row","settings":{"heading":"When should I change my brush head?","row_content":"<p><br\/>It is recommended to change your brush head every 3 months. But we can’t possibly expect you to remember that, so we built in a brush head replacement reminder icon into your SuperBrush. It’ll automatically light up when it’s time to change your brush heads. You can order replacement brush heads <a href=\"https:\/\/sevenoralcare.com\/collections\/superbrush-heads\" target=\"_blank\" title=\"https:\/\/sevenoralcare.com\/collections\/superbrush-heads\">here<\/a>. We also recommend changing your brush head if you’ve fallen sick to avoid reinfection. And please change your brush head if your bristles start fraying (hey overbrusher!)<\/p>","page":""}},"be5db80d-3219-4a24-83d5-79d79388d95c":{"type":"collapsible_row","settings":{"heading":"Can I use any brush heads with the SuperBrush?","row_content":"<p><br\/>Our SuperBrush has a soulmate, our SuperBrush heads, so we request you not to separate them. Our SuperBrush is only compatible with our expertly crafted SuperBrush heads. Feel free to have fun with any colour brush head though, we can’t wait to see the combinations you come up with.<\/p>","page":""}},"877c20be-be03-4693-928b-da6d71781aa1":{"type":"collapsible_row","settings":{"heading":"Why is there a gap between the brush head and body?","row_content":"<p><br\/>Distance makes the heart grow fonder (okay just a little). If you happen to notice a tiny space between your brush head and body, don’t worry it’s on purpose. Why? Because in brushes that don’t have the gap, a lot of the vibrations are lost in the handle of the brush instead of the brush head, thus resulting in lesser cleaning power.<\/p>","page":""}},"97b3853d-f38e-4ed3-ad0e-005ec372155c":{"type":"collapsible_row","settings":{"heading":"How much toothpaste should I use?","row_content":"<p>Don’t fall for what those toothpaste advertisements show you. As an adult, you only need a pea sized amount of toothpaste per brush to clean your teeth. We promise you, no gimmicks, real science and real recommendations only.<\/p>","page":""}},"b87a6948-4b80-445d-bb87-1477fab2852e":{"type":"collapsible_row","settings":{"heading":"My low battery sign is flashing despite a full charge – what do I do?","row_content":"<p><br\/>If this happens, try a factory reset. Put the SuperBrush on the charging stand and long press the “7” power button. The low battery sign will stop flashing.<\/p>","page":""}},"477dea0e-5e86-478b-b4f6-87212b673b52":{"type":"collapsible_row","settings":{"heading":"My brush head replacement sign is flashing despite a changing the brush head – what do I do?","row_content":"<p><\/p><p>If this happens, try a factory reset. Put the SuperBrush on the charging stand and long press the “7” power button. The brush head replacement sign will stop flashing.<\/p>","page":""}}},"block_order":["abfbfc34-dc07-4d03-aa5d-ac53fc7ecee6","07d4046c-19e7-4ba0-9bfd-f2beabf622b1","be5db80d-3219-4a24-83d5-79d79388d95c","877c20be-be03-4693-928b-da6d71781aa1","97b3853d-f38e-4ed3-ad0e-005ec372155c","b87a6948-4b80-445d-bb87-1477fab2852e","477dea0e-5e86-478b-b4f6-87212b673b52"],"settings":{"caption":"","heading":"","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":true,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"faqs2":{"type":"faqs2","blocks":{"237a58a3-fa98-4cec-8594-8babd759eab7":{"type":"collapsible_row","settings":{"heading":"When will I receive my order?","row_content":"<p>Excited to get your Super Seven product? So are we, and we’ll make sure that it reaches you within 7 - 10 business days.<\/p>","page":""}},"1ef2b412-5fa5-4e77-8a2f-eadbb8be25f2":{"type":"collapsible_row","disabled":true,"settings":{"heading":"Can I get same day delivery?","row_content":"<p>If you’re from Mumbai, we’ve got same day delivery for you - at an added shipping charge that is so small, you’ll hardly notice. <\/p><p>As for the rest of India, we promise we’re working on getting same day delivery to your city very, very soon.<\/p>","page":""}},"37121acb-2f08-4c79-9b08-71d47f459bc4":{"type":"collapsible_row","settings":{"heading":"Do you offer cash on delivery?","row_content":"<p>Yes we offer cash on delivery for all orders pan India.<\/p>","page":"frequently-asked-questions"}},"4b904cee-99cc-4397-bd92-3752e8be1b11":{"type":"collapsible_row","settings":{"heading":"What is your returns & exchange policy?","row_content":"<p><\/p><p>While we hope that you love your product, in case something is not right with your product, please reach out to us at <a href=\"mailto:wecare@sevenoralcare.com\">wecare@sevenoralcare.com <\/a>or whatsapp us at +919137986327 and we’ll be happy to exchange it for a new one.<\/p>","page":""}}},"block_order":["237a58a3-fa98-4cec-8594-8babd759eab7","1ef2b412-5fa5-4e77-8a2f-eadbb8be25f2","37121acb-2f08-4c79-9b08-71d47f459bc4","4b904cee-99cc-4397-bd92-3752e8be1b11"],"settings":{"caption":"","heading":"","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"faqs3":{"type":"faqs3","blocks":{"062b25c7-eb10-42af-b9fd-d1f5cc3e2091":{"type":"collapsible_row","settings":{"heading":"How long is the warranty on the SuperBrush?","row_content":"<p>We’ve got you covered! Your SuperBrush comes with a warranty of 1 year, make sure you register your warranty within 30 days of buying your SuperBrush for it to be valid. <\/p>","page":""}},"09e6d5f7-e3b6-4578-b32c-796125472cfc":{"type":"collapsible_row","settings":{"heading":"How to register?","row_content":"<p>There’s a QR code on the inside of your box that you can scan to register your warranty. In case you missed it, register your warranty <a href=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfqwEmhhLMxsp3z2Yi8jx_1IBzv_TygbBCCIpL_axE_Hnuggw\/viewform?vc=0&c=0&w=1&flr=0\" target=\"_blank\" title=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfqwEmhhLMxsp3z2Yi8jx_1IBzv_TygbBCCIpL_axE_Hnuggw\/viewform?vc=0&c=0&w=1&flr=0\">here<\/a>.<\/p>","page":""}},"7167ecea-63eb-4cb2-90d3-33dd9312cc0c":{"type":"collapsible_row","settings":{"heading":"What does the warranty cover?","row_content":"<p>The warranty covers defects arising from electro-magnetic parts and battery that impact functionality of the product. The warranty does not cover any damage due to improper usage and normal wear or use.<\/p>","page":""}},"c3c9da06-7a10-4c8c-80be-9655f7c047d1":{"type":"collapsible_row","settings":{"heading":"My product isn’t working properly – help!","row_content":"<p>While we hope this is very unlikely, even superheroes can have bad days. We have a team to assist you with any problems you may have, just <a href=\"mailto:wecare@sevenoralcare.com\" target=\"_blank\" title=\"mailto:wecare@sevenoralcare.com\">email us<\/a> or <a href=\"https:\/\/wa.me\/919137986327\" target=\"_blank\" title=\"https:\/\/wa.me\/919137986327\">whatsapp us<\/a>. We promise to get back to you asap!<\/p>","page":""}}},"block_order":["062b25c7-eb10-42af-b9fd-d1f5cc3e2091","09e6d5f7-e3b6-4578-b32c-796125472cfc","7167ecea-63eb-4cb2-90d3-33dd9312cc0c","c3c9da06-7a10-4c8c-80be-9655f7c047d1"],"settings":{"caption":"","heading":"","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"faq-intro":{"type":"faq-intro","blocks":{"bd79ba57-6227-4de3-9686-f69c32f78e87":{"type":"heading","settings":{"heading":"<p>Frequently Asked Questions<\/p>","heading_size":"h1"}},"e26c2124-0dc0-4111-ae84-9b273f831d48":{"type":"text","settings":{"text":""}}},"block_order":["bd79ba57-6227-4de3-9686-f69c32f78e87","e26c2124-0dc0-4111-ae84-9b273f831d48"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"background-1","full_width":true,"padding_top":40,"padding_bottom":52}},"discount-popup":{"type":"discount-popup","settings":{"show_section":true,"heading_small":"Ready for a surprise ?","heading_large":"UNLOCK THE MYSTERY DISCOUNT","description":"Enter your email and phone to get exclusive discount","discount_code":"Surprise10","success_description":"Use this code at checkout for your exclusive discount.","disclaimer":"*only applicable on orders above ₹1,000","delay":3}}},"content_for_index":[],"blocks":{"8776485610325655785":{"type":"shopify:\/\/apps\/hiko-social-login\/blocks\/hiko-auth\/3832d7e1-5bcd-4b72-91da-236b57feef8f","disabled":false,"settings":{"social_font":"enable"}},"855628211100114053":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507","disabled":false,"settings":{}},"14060646107696862457":{"type":"shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","disabled":false,"settings":{}},"11105581477831763250":{"type":"shopify:\/\/apps\/ga-free-gift-buy-x-get-y-bogo\/blocks\/app-embeded\/624007ce-b7ae-460f-9bb2-c6b59ecf9add","disabled":true,"settings":{}},"15313946438125251499":{"type":"shopify:\/\/apps\/restock-rooster\/blocks\/restock-rooster-button\/2f682ae2-c8b5-4598-a3ae-4cf8e3ce00af","disabled":false,"settings":{}},"9468172321995857178":{"type":"shopify:\/\/apps\/qikify-upsell-gift\/blocks\/app-embed\/2e94b962-8172-4839-8ad9-7837eb8b017a","disabled":true,"settings":{}},"17135229265405203036":{"type":"shopify:\/\/apps\/quicky\/blocks\/quickBanner\/3421d53e-fb02-449c-a9ef-daf28f28450a","disabled":true,"settings":{}}}},"presets":{"Default":{"logo_width":90,"colors_solid_button_labels":"#ffffff","colors_accent_1":"#121212","gradient_accent_1":"","colors_accent_2":"#334fb4","gradient_accent_2":"","colors_text":"#121212","colors_outline_button_labels":"#121212","colors_background_1":"#ffffff","gradient_background_1":"","colors_background_2":"#f3f3f3","gradient_background_2":"","type_header_font":"assistant_n4","heading_scale":100,"type_body_font":"assistant_n4","body_scale":100,"page_width":1200,"spacing_sections":0,"spacing_grid_horizontal":8,"spacing_grid_vertical":8,"buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":0,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":4,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":4,"inputs_shadow_blur":5,"card_style":"standard","card_image_padding":0,"card_text_alignment":"left","card_color_scheme":"background-2","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"background-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"background-2","blog_card_border_thickness":0,"blog_card_border_opacity":10,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":0,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"bottom left","badge_corner_radius":40,"sale_badge_color_scheme":"accent-2","sold_out_badge_color_scheme":"inverse","accent_icons":"text","brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_twitter_link":"","social_facebook_link":"","social_pinterest_link":"","social_instagram_link":"","social_tiktok_link":"","social_tumblr_link":"","social_snapchat_link":"","social_youtube_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":false,"currency_code_enabled":true,"cart_type":"notification","show_vendor":false,"show_cart_note":false,"cart_drawer_collection":"","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"background-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"background-1"}}}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "logo": "shopify://shop_images/Logo_80cdbff7-9299-4098-b991-94a014100ce9.svg",
+    "logo_width": 70,
+    "favicon": "shopify://shop_images/Favcon.svg",
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#121212",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#334fb4",
+    "gradient_accent_2": "",
+    "colors_text": "#3e3e3f",
+    "colors_outline_button_labels": "#3e3e3f",
+    "colors_background_1": "#ffffff",
+    "gradient_background_1": "",
+    "colors_background_2": "#3e3e3f",
+    "gradient_background_2": "",
+    "type_header_font": "futura_n4",
+    "heading_scale": 100,
+    "type_body_font": "poppins_n4",
+    "body_scale": 100,
+    "page_width": 1600,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 32,
+    "spacing_grid_vertical": 36,
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "standard",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-2",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "background-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "background-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 0,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 0,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "top left",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "accent-1",
+    "sold_out_badge_color_scheme": "inverse",
+    "accent_icons": "text",
+    "brand_headline": "",
+    "brand_description": "<p></p>",
+    "brand_image_width": 100,
+    "social_facebook_link": "",
+    "social_instagram_link": "https://instagram.com/sevenoralcare?igshid=MzRlODBiNWFlZA==",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": true,
+    "currency_code_enabled": true,
+    "cart_type": "drawer",
+    "show_vendor": false,
+    "show_cart_note": true,
+    "offer_txt": "Get 10% off on your first order",
+    "cart_drawer_collection": "shop-all",
+    "checkout_logo_image": "shopify://shop_images/Email_Checkoutpages.svg",
+    "checkout_accent_color": "#3e3e3f",
+    "checkout_button_color": "#3e3e3f",
+    "sections": {
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "collapsible-content": {
+        "type": "collapsible-content",
+        "blocks": {
+          "14bc3fd8-d1f4-4a81-84eb-9274921a9c47": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "Collapsible row",
+              "icon": "check_mark",
+              "row_content": "<p>aa</p>",
+              "page": ""
+            }
+          }
+        },
+        "block_order": [
+          "14bc3fd8-d1f4-4a81-84eb-9274921a9c47"
+        ],
+        "settings": {
+          "caption": "",
+          "heading": "Collapsible content",
+          "heading_size": "h1",
+          "heading_alignment": "center",
+          "layout": "none",
+          "color_scheme": "background-1",
+          "container_color_scheme": "background-2",
+          "open_first_collapsible_row": false,
+          "image_ratio": "adapt",
+          "desktop_layout": "image_second",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "faqs1": {
+        "type": "faqs1",
+        "blocks": {
+          "abfbfc34-dc07-4d03-aa5d-ac53fc7ecee6": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "How should I clean and store my SuperBrush?",
+              "row_content": "<p><br/>Clean your SuperBrush everyday post brushing by just rinsing it with water. Let it air dry in an upright position. Do not store your SuperBrush in wet conditions or in contact with other toiletries or cosmetics as the harmful chemicals can corrode the body of the brush. When travelling, we recommend using our travel case – it’s handy and cute too! We don’t recommend keeping it in any airtight or closed space like a drawer, and don’t use a toothbrush cover either - both of these retain moisture which promotes the growth of a bacterial/fungal environment.</p>",
+              "page": ""
+            }
+          },
+          "07d4046c-19e7-4ba0-9bfd-f2beabf622b1": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "When should I change my brush head?",
+              "row_content": "<p><br/>It is recommended to change your brush head every 3 months. But we can’t possibly expect you to remember that, so we built in a brush head replacement reminder icon into your SuperBrush. It’ll automatically light up when it’s time to change your brush heads. You can order replacement brush heads <a href=\"https://sevenoralcare.com/collections/superbrush-heads\" target=\"_blank\" title=\"https://sevenoralcare.com/collections/superbrush-heads\">here</a>. We also recommend changing your brush head if you’ve fallen sick to avoid reinfection. And please change your brush head if your bristles start fraying (hey overbrusher!)</p>",
+              "page": ""
+            }
+          },
+          "be5db80d-3219-4a24-83d5-79d79388d95c": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "Can I use any brush heads with the SuperBrush?",
+              "row_content": "<p><br/>Our SuperBrush has a soulmate, our SuperBrush heads, so we request you not to separate them. Our SuperBrush is only compatible with our expertly crafted SuperBrush heads. Feel free to have fun with any colour brush head though, we can’t wait to see the combinations you come up with.</p>",
+              "page": ""
+            }
+          },
+          "877c20be-be03-4693-928b-da6d71781aa1": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "Why is there a gap between the brush head and body?",
+              "row_content": "<p><br/>Distance makes the heart grow fonder (okay just a little). If you happen to notice a tiny space between your brush head and body, don’t worry it’s on purpose. Why? Because in brushes that don’t have the gap, a lot of the vibrations are lost in the handle of the brush instead of the brush head, thus resulting in lesser cleaning power.</p>",
+              "page": ""
+            }
+          },
+          "97b3853d-f38e-4ed3-ad0e-005ec372155c": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "How much toothpaste should I use?",
+              "row_content": "<p>Don’t fall for what those toothpaste advertisements show you. As an adult, you only need a pea sized amount of toothpaste per brush to clean your teeth. We promise you, no gimmicks, real science and real recommendations only.</p>",
+              "page": ""
+            }
+          },
+          "b87a6948-4b80-445d-bb87-1477fab2852e": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "My low battery sign is flashing despite a full charge – what do I do?",
+              "row_content": "<p><br/>If this happens, try a factory reset. Put the SuperBrush on the charging stand and long press the “7” power button. The low battery sign will stop flashing.</p>",
+              "page": ""
+            }
+          },
+          "477dea0e-5e86-478b-b4f6-87212b673b52": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "My brush head replacement sign is flashing despite a changing the brush head – what do I do?",
+              "row_content": "<p></p><p>If this happens, try a factory reset. Put the SuperBrush on the charging stand and long press the “7” power button. The brush head replacement sign will stop flashing.</p>",
+              "page": ""
+            }
+          }
+        },
+        "block_order": [
+          "abfbfc34-dc07-4d03-aa5d-ac53fc7ecee6",
+          "07d4046c-19e7-4ba0-9bfd-f2beabf622b1",
+          "be5db80d-3219-4a24-83d5-79d79388d95c",
+          "877c20be-be03-4693-928b-da6d71781aa1",
+          "97b3853d-f38e-4ed3-ad0e-005ec372155c",
+          "b87a6948-4b80-445d-bb87-1477fab2852e",
+          "477dea0e-5e86-478b-b4f6-87212b673b52"
+        ],
+        "settings": {
+          "caption": "",
+          "heading": "",
+          "heading_size": "h1",
+          "heading_alignment": "center",
+          "layout": "none",
+          "color_scheme": "background-1",
+          "container_color_scheme": "background-2",
+          "open_first_collapsible_row": true,
+          "image_ratio": "adapt",
+          "desktop_layout": "image_second",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "faqs2": {
+        "type": "faqs2",
+        "blocks": {
+          "237a58a3-fa98-4cec-8594-8babd759eab7": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "When will I receive my order?",
+              "row_content": "<p>Excited to get your Super Seven product? So are we, and we’ll make sure that it reaches you within 7 - 10 business days.</p>",
+              "page": ""
+            }
+          },
+          "1ef2b412-5fa5-4e77-8a2f-eadbb8be25f2": {
+            "type": "collapsible_row",
+            "disabled": true,
+            "settings": {
+              "heading": "Can I get same day delivery?",
+              "row_content": "<p>If you’re from Mumbai, we’ve got same day delivery for you - at an added shipping charge that is so small, you’ll hardly notice. </p><p>As for the rest of India, we promise we’re working on getting same day delivery to your city very, very soon.</p>",
+              "page": ""
+            }
+          },
+          "37121acb-2f08-4c79-9b08-71d47f459bc4": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "Do you offer cash on delivery?",
+              "row_content": "<p>Yes we offer cash on delivery for all orders pan India.</p>",
+              "page": "frequently-asked-questions"
+            }
+          },
+          "4b904cee-99cc-4397-bd92-3752e8be1b11": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "What is your returns & exchange policy?",
+              "row_content": "<p></p><p>While we hope that you love your product, in case something is not right with your product, please reach out to us at <a href=\"mailto:wecare@sevenoralcare.com\">wecare@sevenoralcare.com </a>or whatsapp us at +919137986327 and we’ll be happy to exchange it for a new one.</p>",
+              "page": ""
+            }
+          }
+        },
+        "block_order": [
+          "237a58a3-fa98-4cec-8594-8babd759eab7",
+          "1ef2b412-5fa5-4e77-8a2f-eadbb8be25f2",
+          "37121acb-2f08-4c79-9b08-71d47f459bc4",
+          "4b904cee-99cc-4397-bd92-3752e8be1b11"
+        ],
+        "settings": {
+          "caption": "",
+          "heading": "",
+          "heading_size": "h1",
+          "heading_alignment": "center",
+          "layout": "none",
+          "color_scheme": "background-1",
+          "container_color_scheme": "background-2",
+          "open_first_collapsible_row": false,
+          "image_ratio": "adapt",
+          "desktop_layout": "image_second",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "faqs3": {
+        "type": "faqs3",
+        "blocks": {
+          "062b25c7-eb10-42af-b9fd-d1f5cc3e2091": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "How long is the warranty on the SuperBrush?",
+              "row_content": "<p>We’ve got you covered! Your SuperBrush comes with a warranty of 1 year, make sure you register your warranty within 30 days of buying your SuperBrush for it to be valid. </p>",
+              "page": ""
+            }
+          },
+          "09e6d5f7-e3b6-4578-b32c-796125472cfc": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "How to register?",
+              "row_content": "<p>There’s a QR code on the inside of your box that you can scan to register your warranty. In case you missed it, register your warranty <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfqwEmhhLMxsp3z2Yi8jx_1IBzv_TygbBCCIpL_axE_Hnuggw/viewform?vc=0&c=0&w=1&flr=0\" target=\"_blank\" title=\"https://docs.google.com/forms/d/e/1FAIpQLSfqwEmhhLMxsp3z2Yi8jx_1IBzv_TygbBCCIpL_axE_Hnuggw/viewform?vc=0&c=0&w=1&flr=0\">here</a>.</p>",
+              "page": ""
+            }
+          },
+          "7167ecea-63eb-4cb2-90d3-33dd9312cc0c": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "What does the warranty cover?",
+              "row_content": "<p>The warranty covers defects arising from electro-magnetic parts and battery that impact functionality of the product. The warranty does not cover any damage due to improper usage and normal wear or use.</p>",
+              "page": ""
+            }
+          },
+          "c3c9da06-7a10-4c8c-80be-9655f7c047d1": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "My product isn’t working properly – help!",
+              "row_content": "<p>While we hope this is very unlikely, even superheroes can have bad days. We have a team to assist you with any problems you may have, just <a href=\"mailto:wecare@sevenoralcare.com\" target=\"_blank\" title=\"mailto:wecare@sevenoralcare.com\">email us</a> or <a href=\"https://wa.me/919137986327\" target=\"_blank\" title=\"https://wa.me/919137986327\">whatsapp us</a>. We promise to get back to you asap!</p>",
+              "page": ""
+            }
+          }
+        },
+        "block_order": [
+          "062b25c7-eb10-42af-b9fd-d1f5cc3e2091",
+          "09e6d5f7-e3b6-4578-b32c-796125472cfc",
+          "7167ecea-63eb-4cb2-90d3-33dd9312cc0c",
+          "c3c9da06-7a10-4c8c-80be-9655f7c047d1"
+        ],
+        "settings": {
+          "caption": "",
+          "heading": "",
+          "heading_size": "h1",
+          "heading_alignment": "center",
+          "layout": "none",
+          "color_scheme": "background-1",
+          "container_color_scheme": "background-2",
+          "open_first_collapsible_row": false,
+          "image_ratio": "adapt",
+          "desktop_layout": "image_second",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "faq-intro": {
+        "type": "faq-intro",
+        "blocks": {
+          "bd79ba57-6227-4de3-9686-f69c32f78e87": {
+            "type": "heading",
+            "settings": {
+              "heading": "<p>Frequently Asked Questions</p>",
+              "heading_size": "h1"
+            }
+          },
+          "e26c2124-0dc0-4111-ae84-9b273f831d48": {
+            "type": "text",
+            "settings": {
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "bd79ba57-6227-4de3-9686-f69c32f78e87",
+          "e26c2124-0dc0-4111-ae84-9b273f831d48"
+        ],
+        "settings": {
+          "desktop_content_position": "left",
+          "content_alignment": "left",
+          "color_scheme": "background-1",
+          "full_width": true,
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
+      },
+      "discount-popup": {
+        "type": "discount-popup",
+        "settings": {
+          "show_section": true,
+          "image": "shopify://shop_images/48d7b117-cde2-4501-9778-62f6accfaf62.png",
+          "mobile_image": "shopify://shop_images/48d7b117-cde2-4501-9778-62f6accfaf62.png",
+          "popup_link": "",
+          "heading_large": "UNLOCK THE MYSTERY DISCOUNT",
+          "delay": 3
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "8776485610325655785": {
+        "type": "shopify://apps/hiko-social-login/blocks/hiko-auth/3832d7e1-5bcd-4b72-91da-236b57feef8f",
+        "disabled": false,
+        "settings": {
+          "social_font": "enable"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "11105581477831763250": {
+        "type": "shopify://apps/ga-free-gift-buy-x-get-y-bogo/blocks/app-embeded/624007ce-b7ae-460f-9bb2-c6b59ecf9add",
+        "disabled": true,
+        "settings": {}
+      },
+      "15313946438125251499": {
+        "type": "shopify://apps/restock-rooster/blocks/restock-rooster-button/2f682ae2-c8b5-4598-a3ae-4cf8e3ce00af",
+        "disabled": false,
+        "settings": {}
+      },
+      "9468172321995857178": {
+        "type": "shopify://apps/qikify-upsell-gift/blocks/app-embed/2e94b962-8172-4839-8ad9-7837eb8b017a",
+        "disabled": true,
+        "settings": {}
+      },
+      "17135229265405203036": {
+        "type": "shopify://apps/quicky/blocks/quickBanner/3421d53e-fb02-449c-a9ef-daf28f28450a",
+        "disabled": true,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "logo_width": 90,
+      "colors_solid_button_labels": "#ffffff",
+      "colors_accent_1": "#121212",
+      "gradient_accent_1": "",
+      "colors_accent_2": "#334fb4",
+      "gradient_accent_2": "",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#ffffff",
+      "gradient_background_1": "",
+      "colors_background_2": "#f3f3f3",
+      "gradient_background_2": "",
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "background-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "background-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 0,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "accent_icons": "text",
+      "brand_headline": "",
+      "brand_description": "<p></p>",
+      "brand_image_width": 100,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  }
+}
