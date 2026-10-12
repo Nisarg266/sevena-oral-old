@@ -27,8 +27,8 @@
   .discount-popup-container {
     position: relative !important;
     width: fit-content !important;
-    max-width: min(90vw, 460px) !important;
-    max-height: 76vh !important;
+    max-width: min(94vw, 740px) !important;
+    max-height: 90vh !important;
     border-radius: 6px !important;
     overflow: hidden !important;
     border: 2px solid #ffffff !important;
@@ -51,7 +51,7 @@
   .discount-popup-img-desktop {
     display: block !important;
     max-width: 100%;
-    max-height: 76vh !important;
+    max-height: 90vh !important;
     width: auto !important;
     height: auto !important;
     border-radius: 4px;
@@ -113,12 +113,12 @@
   /* Large desktop */
   @media screen and (min-width: 1400px) {
     .discount-popup-container {
-      max-width: min(90vw, 480px) !important;
-      max-height: 76vh !important;
+      max-width: min(94vw, 820px) !important;
+      max-height: 92vh !important;
     }
   }
 
-  /* Tablet landscape */
+  /* Tablet landscape — keep smaller, do not use big desktop size */
   @media screen and (max-width: 1024px) {
     .discount-popup-container {
       width: fit-content !important;
@@ -222,17 +222,17 @@
   .discount-popup-desktop-wrap {
     display: block !important;
     position: relative;
-    max-height: 76vh;
+    max-height: 90vh;
     line-height: 0;
   }
 
   .discount-popup-desktop-form {
     position: absolute;
-    top: 37%;
-    left: calc(4.5% - 5px);
+    top: 68.5%;
+    left: 3.5%;
     transform: translateY(-50%);
-    width: 55%;
-    max-width: 320px;
+    width: 49.5%;
+    max-width: 380px;
     z-index: 5;
     margin: 0;
     padding: 0;
@@ -241,15 +241,20 @@
 
   .discount-popup-pill-desktop {
     padding: 3px 5px 3px 18px !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-input {
-    font-size: 14px !important;
-    padding: 7px 0 !important;
+    font-size: 13.5px !important;
+    padding: 0 !important;
+    height: 100% !important;
+    line-height: 1 !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-input::placeholder {
-    font-size: 13.5px !important;
+    font-size: 13px !important;
   }
 
   .discount-popup-pill-desktop .discount-popup-arrow-btn {
@@ -309,7 +314,7 @@
       height: 12px;
     }
 
-    /* Mobile Email Input Pill Overlay */
+    /* Mobile Email Input Pill Overlay — unchanged */
     .discount-popup-mobile-form {
       position: absolute;
       top: 37%;
